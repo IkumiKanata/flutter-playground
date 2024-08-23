@@ -19,14 +19,14 @@ class SecondScreen extends StatelessWidget {
           children: [
             const Text('number = 0'),
             ElevatedButton(
-              child: const Text('Go to First Screen from Second'),
+              child: const Text('戻る'),
               onPressed: () async {
                 // Navigator.of(context).pushNamed('/second');
-                GoRouter.of(context).go('/');
+                GoRouter.of(context).pop();
               },
             ),
             ElevatedButton(onPressed: () {
-              GoRouter.of(context).go('/third');
+              GoRouter.of(context).go('/second/third');
             }, child: const Text('Go to Third Screen from Second')),
           ],
         ),

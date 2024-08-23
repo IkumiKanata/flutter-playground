@@ -24,7 +24,7 @@ class FirstScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(onPressed: () {
-              GoRouter.of(context).go('/third');
+              GoRouter.of(context).go('/second/third');
             }, child: const Text('Go to Third Screen from First')),
           ],
         ),
