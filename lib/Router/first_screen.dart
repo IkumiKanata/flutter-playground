@@ -19,7 +19,6 @@ class FirstScreen extends StatelessWidget {
             ElevatedButton(
               child: const Text('Go to Second Screen from First'),
               onPressed: () async {
-                // Navigator.of(context).pushNamed('/second');
                 GoRouter.of(context).go('/second');
               },
             ),
